@@ -1,14 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
-import { useMotionValueEvent, useScroll, motion, AnimatePresence } from "framer-motion";
-import { Icons } from "@/components/icons";
+import { Menu } from "lucide-react";
+import { useState } from "react";
+import { useMotionValueEvent, useScroll, motion } from "framer-motion";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -32,9 +30,8 @@ export function Header() {
     }
   });
 
-
   return (
-    <motion.header 
+    <motion.header
       variants={{
         visible: { y: 0 },
         hidden: { y: "-100%" },
@@ -43,12 +40,15 @@ export function Header() {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm"
     >
-      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center space-x-2">
-          <Icons.logo className="h-6 w-6 text-primary" />
-          <span className="hidden font-bold sm:inline-block">ACY KLYNE B. AGUILAR</span>
-        </Link>
-        <nav className="hidden items-center space-x-6 md:flex">
+      <div className="container mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 lg:px-11">
+        
+        {/* Logo / Name with 2px left shift */}
+        <span className="font-bold tracking-tight">
+          ACY KLYNE B. AGUILAR
+        </span>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex flex-1 justify-center items-center space-x-10">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -59,6 +59,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
+
+        {/* Actions */}
         <div className="flex items-center space-x-2">
           <ThemeToggle />
           <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
@@ -70,12 +72,9 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col space-y-6">
-                <div className="flex items-center justify-between">
-                  <Link href="/" className="flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
-                    <Icons.logo className="h-6 w-6 text-primary" />
-                    <span className="font-bold">ACY KLYNE B. AGUILAR</span>
-                  </Link>
-                </div>
+                <span className="font-bold">
+                  ACY KLYNE B. AGUILAR
+                </span>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
                     <Link

@@ -4,33 +4,38 @@ import { Icons } from "@/components/icons";
 export const projects = [
   {
     title: "Sales Forecasting Application",
-    description: "A dynamic web-based application that monitors real-time sales data and predicts sales trends for the next six months using JavaScript and TensorFlow.js with ML predictions.",
-    image: "project-1",
+    description:
+      "A dynamic web-based application that monitors real-time sales data and predicts sales trends for the next six months using JavaScript and TensorFlow.js with ML predictions.",
+    image: "/prev-projects/sales_forecasting_dashboard.png",
     tags: ["JavaScript", "TensorFlow.js", "ML"],
     link: "https://github.com/acyklyne/Sales_Forecasting_Application.git",
   },
   {
     title: "HerbAI",
-    description: "A real-time herbal detection app using Flutter, C++, and YOLOv8 AI, capable of scanning plants and retrieving detailed medicinal data.",
-    image: "project-2",
+    description:
+      "A real-time herbal detection app using Flutter, C++, and YOLOv8 AI, capable of scanning plants and retrieving detailed medicinal data.",
+    image: "/prev-projects/herbai.png",
     tags: ["Flutter", "C++", "YOLOv8", "AI"],
     link: "https://github.com/EzekielleGambong/herbai.git",
   },
   {
     title: "CakeCraft",
-    description: "A web platform for designing custom cakes, empowering small bakeries. Built with ReactJS, Tailwind CSS, Laravel, and MySQL.",
-    image: "project-3",
+    description:
+      "A web platform for designing custom cakes, empowering small bakeries. Built with ReactJS, Tailwind CSS, Laravel, and MySQL.",
+    image: "/prev-projects/cakecraft.png",
     tags: ["ReactJS", "Tailwind CSS", "Laravel", "MySQL"],
     link: "https://github.com/acyklyne/CakeCraft.git",
   },
   {
     title: "Choice Tales",
-    description: "A web-based interactive story platform where users shape the narrative through their choices. Built with ReactJS and Tailwind CSS.",
-    image: "project-4",
+    description:
+      "A web-based interactive story platform where users shape the narrative through their choices. Built with ReactJS and Tailwind CSS.",
+    image: "/prev-projects/choicetales.png",
     tags: ["ReactJS", "Tailwind CSS"],
     link: "https://github.com/acyklyne/ChoiceTales.git",
   },
 ];
+
 
 export const skills = [
   { name: "JavaScript", icon: Icons.javascript, url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
@@ -54,27 +59,69 @@ export const socialLinks = [
 ];
 
 export const certifications = [
-    {
-      title: "Introduction to Back-End Development",
-      issuer: "Coursera",
-      date: "May 2024",
-      link: "https://www.coursera.org/account/accomplishments/verify/938YVCU6V848",
-      image: "cert-1",
-    },
-    {
-      title: "Freeaman",
-      issuer: "Raket.ph",
-      date: "May 2024",
-      link: "https://www.raket.ph/e-certificate/6620d41aa570a",
-      image: "cert-2",
-    },
-    {
-      title: "Udemy Certified",
-      issuer: "Udemy",
-      date: "May 2024",
-      link: "#",
-      image: "cert-3",
-    },
+  {
+    title: "Installing & Configuring Computer Systems",
+    issuer: "TESDA",
+    date: "2025",
+    pdf: "/certficates/AGUILAR_TESDA_INSTALLING_CONFIGURING_COMPUTER_SYSTEMS.pdf",
+    previewImage: "/preview/AGUILAR_TESDA_INSTALLING_CONFIGURING_COMPUTER_SYSTEMS.png",
+  },
+  {
+    title: "C++ Essentials 1",
+    issuer: "Cisco",
+    date: "2025",
+    pdf: "/certficates/CPLUSPLUS_Essentials_1.pdf",
+    previewImage: "/preview/CPLUSPLUS_Essentials_1.png",
+  },
+  {
+    title: "Computer Hardware Basics",
+    issuer: "Cisco",
+    date: "2025",
+    pdf: "/certficates/Computer_Hardware_Basics.pdf",
+    previewImage: "/preview/Computer_Hardware_Basics.png",
+  },
+  {
+    title: "Intro to Modern AI",
+    issuer: "Cisco",
+    date: "2025",
+    pdf: "/certficates/Intro_to_Modern_AI.pdf",
+    previewImage: "/preview/Intro_to_Modern_AI.png",
+  },
+  {
+    title: "AWS Amazon Aurora MySQL Basics",
+    issuer: "AWS",
+    date: "2024",
+    pdf: "/certficates/AWS_Amazon_Aurora_MySQL_Basics.pdf",
+    previewImage: "/preview/AWS_Amazon_Aurora_MySQL_Basics.png",
+  },
+  {
+    title: "Fundamentals of Data Analytics 1",
+    issuer: "AWS",
+    date: "2024",
+    pdf: "/certficates/AWS_Skill_Builder_1.pdf",
+    previewImage: "/preview/AWS_Skill_Builder_1.png",
+  },
+  {
+    title: "Fundamentals of Data Analytics 2",
+    issuer: "AWS",
+    date: "2024",
+    pdf: "/certficates/AWS_Skill_Builder_2.pdf",
+    previewImage: "/preview/AWS_Skill_Builder_2.png",
+  },
+  {
+    title: "Smartrepreneurship 101",
+    issuer: "TESDA",
+    date: "2023",
+    pdf: "/certficates/AGUILAR_TESDA_SMARTREPRENEURSHIP_101.pdf",
+    previewImage: "/preview/AGUILAR_TESDA_SMARTREPRENEURSHIP_101.png",
+  },
+  {
+    title: "Intro to CSS",
+    issuer: "TESDA",
+    date: "2023",
+    pdf: "/certficates/AGUILAR_TESDA_INTRO_TO_CSS.pdf",
+    previewImage: "/preview/AGUILAR_TESDA_INTRO_TO_CSS.png",
+  },
 ];
 
 export const services = [

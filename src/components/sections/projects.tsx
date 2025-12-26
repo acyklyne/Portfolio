@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "@/lib/data";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import {
   Card,
   CardContent,
@@ -36,7 +35,6 @@ export function ProjectsSection() {
   };
 
   const currentProject = selectedProject !== null ? projects[selectedProject] : null;
-  const currentProjectImage = currentProject ? PlaceHolderImages.find((img) => img.id === currentProject.image) : null;
 
 
   return (
@@ -48,7 +46,6 @@ export function ProjectsSection() {
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, index) => {
-            const projectImage = PlaceHolderImages.find((img) => img.id === project.image);
             return (
               <motion.div
                 key={index}
@@ -57,17 +54,16 @@ export function ProjectsSection() {
                 className="h-full"
               >
                 <Card className="flex flex-col overflow-hidden h-full transition-shadow duration-300 hover:shadow-xl">
-                  {projectImage && (
-                    <button 
+                  {project.image && (
+                    <button
                       className="aspect-video relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary rounded-t-lg"
                       onClick={() => setSelectedProject(index)}
                     >
                       <Image
-                        src={projectImage.imageUrl}
+                        src={project.image}
                         alt={project.title}
                         fill
                         className="object-cover"
-                        data-ai-hint={projectImage.imageHint}
                       />
                     </button>
                   )}
@@ -99,7 +95,7 @@ export function ProjectsSection() {
       </div>
 
        <AnimatePresence>
-        {selectedProject !== null && currentProject && currentProjectImage && (
+        {selectedProject !== null && currentProject && (
            <Dialog open={selectedProject !== null} onOpenChange={(open) => !open && setSelectedProject(null)}>
             <DialogContent className="p-0 max-w-5xl w-full bg-transparent border-0 flex flex-col items-center justify-center">
                 <DialogTitle className="sr-only">{currentProject.title}</DialogTitle>
@@ -110,18 +106,14 @@ export function ProjectsSection() {
                     transition={{ duration: 0.3 }}
                     className="relative w-full aspect-video"
                 >
-                    <Image 
-                        src={currentProjectImage.imageUrl} 
+                    <Image
+                        src={currentProject.image}
                         alt={currentProject.title}
                         fill
                         className="object-contain"
                     />
                 </motion.div>
-                <div className="absolute top-4 right-4 z-50">
-                     <Button variant="ghost" size="icon" onClick={() => setSelectedProject(null)} className="text-white bg-black/50 hover:bg-black/75 hover:text-white">
-                        <X className="h-6 w-6" />
-                     </Button>
-                </div>
+
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 z-50">
                     <Button variant="ghost" size="icon" onClick={handlePrev} className="text-white bg-black/50 hover:bg-black/75 hover:text-white">
                         <ChevronLeft className="h-8 w-8" />
