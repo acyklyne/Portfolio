@@ -9,6 +9,7 @@ type AnimatedSectionProps = {
   className?: string;
   as?: ElementType;
   id?: string;
+  style?: React.CSSProperties;
 };
 
 export function AnimatedSection({
@@ -16,12 +17,13 @@ export function AnimatedSection({
   className,
   as: Component = "div",
   id,
+  style,
 }: AnimatedSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <Component ref={ref} className={cn(className)} id={id}>
+    <Component ref={ref} className={cn(className)} id={id} style={style}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}

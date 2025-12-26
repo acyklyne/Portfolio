@@ -36,6 +36,7 @@ export function AboutSection() {
           </div>
 
           <div className="md:col-span-3">
+            <h2 className="text-3xl font-semibold mb-4">Data Analyst / Computer Technician / Computer Science</h2>
             <p className="text-lg text-muted-foreground mb-6">
               I'm a passionate and creative developer with a knack for building beautiful, interactive, and accessible web applications. With a strong foundation in modern frontend technologies, I strive to create seamless user experiences that are both functional and delightful.
             </p>

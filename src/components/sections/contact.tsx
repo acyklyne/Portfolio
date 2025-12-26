@@ -14,7 +14,7 @@ export function ContactSection() {
         </p>
         <div className="mt-8 flex justify-center">
           <Button asChild size="lg">
-            <a href="mailto:hello@klyne.com">
+            <a href="mailto:aguilaracyklyne64@gmail.com" className="flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-4 focus:ring-primary/100">
               <Mail className="mr-2 h-5 w-5" />
               Say Hello
             </a>

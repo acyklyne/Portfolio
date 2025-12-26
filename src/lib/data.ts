@@ -49,7 +49,7 @@ export const skills = [
   { name: "Firebase", icon: Icons.firebase, url: "https://firebase.google.com/" },
   { name: "Figma", icon: Icons.figma, url: "https://www.figma.com/" },
   { name: "Hardware & Systems", icon: Cpu, url: "#services" },
-  { name: "Data Analysis", icon: LineChart, url: "#services" },
+  { name: "Data Science & Machine Learning", icon: BrainCircuit, url: "#services" },
 ];
 
 export const socialLinks = [
