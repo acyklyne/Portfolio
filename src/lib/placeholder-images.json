@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "about-me",
+      "description": "A portrait of a person in a professional setting",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjY2MzIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "Abstract image representing a web development project",
+      "imageUrl": "https://images.unsplash.com/photo-1626908013351-800ddd734b8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjB0ZWNofGVufDB8fHx8MTc2NjY0MDc0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "project-2",
+      "description": "Image related to e-commerce and online shopping",
+      "imageUrl": "https://images.unsplash.com/photo-1601598851547-4302969d0614?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzaG9wcGluZyUyMGNhcnR8ZW58MHx8fHwxNzY2NjcyOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shopping cart"
+    },
+    {
+      "id": "project-3",
+      "description": "Image representing task management and productivity",
+      "imageUrl": "https://images.unsplash.com/photo-1623265300797-4a3541e29a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hlY2tsaXN0JTIwdGFza3N8ZW58MHx8fHwxNzY2NjcyOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "checklist tasks"
+    },
+    {
+      "id": "project-4",
+      "description": "Image of clouds and sun, representing a weather app",
+      "imageUrl": "https://images.unsplash.com/photo-1766269766133-db7c74f16a66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2VhdGhlciUyMGNsb3Vkc3xlbnwwfHx8fDE3NjY2NzI5MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "weather clouds"
+    },
+    {
+      "id": "cert-1",
+      "description": "An image of a certificate on a desk",
+      "imageUrl": "https://images.unsplash.com/photo-1585331505470-97216d3d94a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjY4MDkyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "certificate desk"
+    },
+    {
+      "id": "cert-2",
+      "description": "A close-up of a formal certificate document",
+      "imageUrl": "https://images.unsplash.com/photo-1618299672623-a05469752355?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjY4MDkyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "formal certificate"
+    },
+    {
+      "id": "cert-3",
+      "description": "A person proudly holding a certificate",
+      "imageUrl": "https://images.unsplash.com/photo-1627552199209-a7cb3b6383a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjY4MDkyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person certificate"
+    }
+  ]
+}
