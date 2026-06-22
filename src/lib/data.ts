@@ -16,7 +16,7 @@ export const projects = [
       "A real-time herbal detection app using Flutter, C++, and YOLOv8 AI, capable of scanning plants and retrieving detailed medicinal data.",
     image: "/prev-projects/herbai.png",
     tags: ["Flutter", "C++", "YOLOv8", "AI"],
-    link: "https://github.com/EzekielleGambong/herbai.git",
+    link: "https://drive.google.com/drive/folders/1du4xBE0_vrc5IAPqqLQmh6vT66CPZ2ne?usp=drive_link",
   },
   {
     title: "CakeCraft",
