@@ -47,8 +47,8 @@ export function AboutSection() {
             {/* CV Download Button */}
             <Button asChild size="lg">
               <a
-                href="/cv/ACY_KLYNE_AGUILAR-CV.pdf"
-                download="ACY_KLYNE_AGUILAR-CV.pdf"
+                href="/cv/CV - ACY KLYNE B. AGUILAR_.pdf"
+                download="CV - ACY KLYNE B. AGUILAR_.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
