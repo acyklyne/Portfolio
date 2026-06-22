@@ -8,7 +8,7 @@ export const projects = [
       "A project focused on optimizing iLab reservation workflows to improve scheduling efficiency and user experience.",
     image: "/prev-projects/pncilab.png",
     tags: ["Next.js", "Prisma", "SQLite", "Tailwind CSS"],
-    link: "#",
+    link: "https://github.com/acyklyne/PNC_iLab_Reserve.git",
   },
   {
     title: "HerbAI",
