@@ -3,12 +3,12 @@ import { Icons } from "@/components/icons";
 
 export const projects = [
   {
-    title: "Sales Forecasting Application",
+    title: "PNC iLab Reserve",
     description:
-      "A dynamic web-based application that monitors real-time sales data and predicts sales trends for the next six months using JavaScript and TensorFlow.js with ML predictions.",
-    image: "/prev-projects/sales_forecasting_dashboard.png",
-    tags: ["JavaScript", "TensorFlow.js", "ML"],
-    link: "https://github.com/acyklyne/Sales_Forecasting_Application.git",
+      "A project focused on optimizing iLab reservation workflows to improve scheduling efficiency and user experience.",
+    image: "/prev-projects/pncilab.png",
+    tags: ["Next.js", "Prisma", "SQLite", "Tailwind CSS"],
+    link: "#",
   },
   {
     title: "HerbAI",
